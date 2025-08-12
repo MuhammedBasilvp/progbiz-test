@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <div class="header">
             <a href="index.html"> <img class="header-logo1" src="assets/logos/mainlogo.svg" alt="logo"></a>
@@ -36,13 +37,15 @@
                 <a href="#">Products</a>
                 <a href="#">Blog</a>
                 <div class="ls-wrap-mob">
-                    <a  href="">Log in</a>
-                    <a  href="">Sign up Free </a>
+                    <a href="">Log in</a>
+                    <a href="">Sign up Free </a>
                 </div>
 
             </div>
         </div>
     </header>
+
+    <!-- home banner title -->
     <section class="outer-wrap">
         <div class="containermain  main-banner">
             <div class="top-head-hero-bnr">
@@ -61,10 +64,13 @@
         </div>
 
     </section>
+
+    <!-- banner image1 -->
     <div class="banner-img1">
         <img src="assets/home/bannerimage.png" alt="">
 
     </div>
+
     <section class="outer-wrap">
         <div class="containermain sec2">
             <h3>2025</h3>
@@ -74,7 +80,104 @@
 
         </div>
 
+
     </section>
+
+    <!-- slider -->
+    <section class="slide-wrap1">
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <div id="cards1" class="card">
+                    <div class="bx-wrap">
+                        <div>
+                            <img src="assets/home/slider1.png" alt="">
+                        </div>
+                        <div class="bx-title">
+                            <h1>Organic Farm</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="bx-wrap">
+                        <div>
+                            <img src="assets/home/slider2.png" alt="">
+                        </div>
+                        <div class="bx-title">
+                            <h1>Organic Fertilizer</h1>
+                        </div>
+                    </div>
+                </div>
+                <div id="cards1" class="card">
+                    <div class="bx-wrap">
+                        <div>
+                            <img src="assets/home/slider3.png" alt="">
+                        </div>
+                        <div class="bx-title">
+                            <h1>Technology Irrigation</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="bx-wrap">
+                        <div>
+                            <img src="assets/home/slider4.png" alt="">
+                        </div>
+                        <div class="bx-title">
+                            <h1>Agricultural Monitoring </h1>
+                        </div>
+                    </div>
+                </div>
+                <div id="cards1" class="card">
+                    <div class="bx-wrap">
+                        <div>
+                            <img src="assets/home/slider1.png" alt="">
+                        </div>
+                        <div class="bx-title">
+                            <h1>Organic Farm</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="bx-wrap">
+                        <div>
+                            <img src="assets/home/slider2.png" alt="">
+                        </div>
+                        <div class="bx-title">
+                            <h1>Organic Fertilizer</h1>
+                        </div>
+                    </div>
+                </div>
+                <div id="cards1" class="card">
+                    <div class="bx-wrap">
+                        <div>
+                            <img src="assets/home/slider3.png" alt="">
+                        </div>
+                        <div class="bx-title">
+                            <h1>Technology Irrigation</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="bx-wrap">
+                        <div>
+                            <img src="assets/home/slider4.png" alt="">
+                        </div>
+                        <div class="bx-title">
+                            <h1>Agricultural Monitoring </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="sl-btn1" onclick="prevSlide()"><img src="assets/icons/slidearrowleft.png" alt=""></button>
+                <button class="sl-btn2" onclick="nextSlide()"><img src="assets/icons/slidearrow.png" alt=""></button>
+            </div>
+
+           
+        </div>
+
+    </section>
+
     <section class="bk-img">
         <div class="outer-wrap">
             <div class="containermain sec4">
@@ -144,7 +247,6 @@
 
             </div>
 
-
         </div>
 
     </section>
@@ -194,8 +296,8 @@
 
     </section>
 
-    <!-- footer -->
 
+    <!-- footer -->
     <footer class="outer-wrap ft-wrap">
         <div class="containermain footer-wrap2">
             <div class="ft1">
@@ -275,6 +377,49 @@
         function closeNav() {
             document.getElementById("mySidepanel").style.width = "0";
         }
+
+        //    slider
+        const slider = document.getElementById("slider");
+        const cards = slider.querySelectorAll(".card");
+        let currentIndex = 0;
+
+        function getCardsPerView() {
+            const width = window.innerWidth;
+            if (width >= 900) return 3;
+            if (width >= 600) return 2;
+            return 1;
+        }
+
+        function updateSlider() {
+            const cardsPerView = getCardsPerView();
+            const cardWidth = slider.clientWidth / cardsPerView;
+            slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        }
+
+        function nextSlide() {
+            const cardsPerView = getCardsPerView();
+            if (currentIndex < cards.length - cardsPerView) {
+                currentIndex++;
+                updateSlider();
+            }
+        }
+
+        function prevSlide() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateSlider();
+            }
+        }
+
+        // Update on resize
+        window.addEventListener("resize", () => {
+            updateSlider();
+        });
+
+        // Initial update
+        window.addEventListener("load", () => {
+            updateSlider();
+        });
     </script>
 
 </body>

@@ -159,6 +159,7 @@ header {
     height: 107px;
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 
 .header {
@@ -316,7 +317,10 @@ header {
 .socials1 img {
     width: 23px;
     height: 23px;
+    
 }
+
+
 
 .ft-links-wrap {
     display: flex;
@@ -357,8 +361,11 @@ header {
     line-height: 100%;
     letter-spacing: -3%;
     text-transform: capitalize;
+    transition: 0.4s;
+}
 
-
+.ft-links1 ul li a:hover {
+    color: #FFFFFF;
 }
 
 .ft-bottom-text {

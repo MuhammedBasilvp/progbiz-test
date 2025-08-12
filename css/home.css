@@ -125,8 +125,8 @@
     height: 542px;
     align-items: center;
     justify-content: center;
-    object-fit: cover;
     display: flex;
+    overflow: hidden;
 
 
 }
@@ -135,6 +135,16 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+
+.banner-img1 img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .sec2 {
@@ -323,6 +333,7 @@
     height: 455px;
     opacity: 1;
     border-radius: 20px;
+    overflow: hidden;
 
 }
 
@@ -331,6 +342,16 @@
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+
+.bx-img1 img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .bx-img2 {
@@ -338,6 +359,7 @@
     height: 289px;
     opacity: 1;
     border-radius: 20px;
+    overflow: hidden;
 
 }
 
@@ -346,6 +368,16 @@
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+
+.bx-img2 img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .bx-img3 {
@@ -353,6 +385,7 @@
     height: 455px;
     opacity: 1;
     border-radius: 20px;
+    overflow: hidden;
 
 }
 
@@ -361,6 +394,16 @@
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+
+.bx-img3 img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 /* contact form */
@@ -479,8 +522,8 @@ input[type=submit]:hover {
     width: 630px;
     height: 706px;
     border-radius: 20px;
-
     object-fit: cover;
+    overflow: hidden;
 }
 
 .contact-image1 img {
@@ -488,7 +531,183 @@ input[type=submit]:hover {
     height: 100%;
     border-radius: 20px;
     object-fit: cover;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    opacity: 1;
 }
+
+.contact-image1 img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/* slider */
+.slide-wrap1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-container {
+    max-width: 1500px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 750px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 10px;
+    /* background: #4ecdc4; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 638px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+/* Responsive widths */
+
+
+@media (min-width: 600px) {
+
+    .card {
+        flex: 0 0 50%;
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 700px) {
+    .card {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .card {
+        flex: 0 0 33.33%;
+        max-width: 38.33%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card {
+        flex: 0 0 33.33%;
+        max-width: 30.33%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .card {
+        flex: 0 0 33.33%;
+        max-width: 26.33%;
+    }
+}
+
+
+.buttons {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+    gap: 32px;
+}
+
+.buttons button {
+    pointer-events: auto;
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buttons button:hover {
+    background: #242424;
+}
+
+.sl-btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 35px;
+    opacity: 1;
+    border: 2px solid #000000;
+}
+
+.sl-btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 35px;
+    opacity: 1;
+    border: 2px solid #000000;
+}
+
+.bx-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.bx-wrap>div {
+    width: 380px;
+    /* height: 480px; */
+    border-radius: 20px;
+}
+
+.bx-wrap>div>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.bx-title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bx-title h1 {
+    font-family: Open Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -3%;
+    color: #636363;
+    margin-top: 20px;
+
+}
+
+#cards1 {
+    margin-top: -36px;
+}
+
 
 @media (max-width:1290px) {
     .sec6 {
@@ -740,7 +959,24 @@ input[type=submit]:hover {
     }
 
     .main-banner h1 {
-
         font-size: 70px;
+    }
+
+    #cards1 {
+        margin-top: 0px;
+    }
+
+    .card {
+        flex: 0 0 94%;
+        max-width: 100%;
+    }
+
+    .slider-container {
+        width: 90%;
+    }
+
+    .bx-wrap>div {
+        width: 315px;
+
     }
 }
