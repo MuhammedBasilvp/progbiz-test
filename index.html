@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,274 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
+
 <body>
-    <h1>hello test3git</h1>
-    
+    <header>
+        <div class="header">
+            <a href="index.html"> <img class="header-logo1" src="assets/logos/mainlogo.svg" alt="logo"></a>
+            <div class="nav-outer">
+                <ul>
+                    <li><a class="nav-active" href="">Home</a></li>
+                    <li><a class="nav-link1" href="">About Us</a></li>
+                    <li><a class="nav-link1" href="">Reviews</a></li>
+                    <li><a class="nav-link1" href="">Products</a></li>
+                    <li><a class="nav-link1" href="">Blog</a></li>
+                </ul>
+            </div>
+            <div class="ls-wrap">
+                <a class="login" href="">Log in</a>
+                <a class="signup" href="">Sign up Free </a>
+            </div>
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Reviews</a>
+                <a href="#">Products</a>
+                <a href="#">Blog</a>
+                <div class="ls-wrap-mob">
+                    <a  href="">Log in</a>
+                    <a  href="">Sign up Free </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <section class="outer-wrap">
+        <div class="containermain  main-banner">
+            <div class="top-head-hero-bnr">
+                <div></div>
+                <h2>Top Agro Researcher’s</h2>
+            </div>
+            <h1>Cultivating Next-Gen Growth<br> in Agriculture</h1>
+            <p>Empowering farmers with smarter tools, bigger yields, and greener solutions</p>
+            <a href="">
+                <div class="btn1-bnr">
+                    Get Started
+                    <img src="assets/icons/arrow2.svg" alt="">
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+    <div class="banner-img1">
+        <img src="assets/home/bannerimage.png" alt="">
+
+    </div>
+    <section class="outer-wrap">
+        <div class="containermain sec2">
+            <h3>2025</h3>
+            <p>At <span>BioSynthesis,</span> we’re growing a greener, smarter future for agriculture. With innovative
+                tools and sustainable solutions, we help farmers boost yields, cut waste, and protect the planet.
+                Together, we’re cultivating healthier crops, stronger communities, and a brighter tomorrow.</p>
+
+        </div>
+
+    </section>
+    <section class="bk-img">
+        <div class="outer-wrap">
+            <div class="containermain sec4">
+                <h1>Transform Your Farm.<br> Empower Your Future.</h1>
+                <div class="arrow-bottom">
+                    <a href="">
+                        <img src="assets/icons/arrow1.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="outer-wrap">
+        <div class="containermain sec5">
+            <h1>The Green Growth Hub: Innovation & Earthwise</h1>
+            <p>Insights, tips, and stories from the world of sustainable farming and innovative agriculture — offering
+                expert advice, real-world success stories, and the latest trends to help farmers embrace smarter,
+                eco-friendly practices. From cutting-edge technology to time-tested solutions, we’re here to inspire and
+                guide you on the journey toward a more sustainable, productive future.</p>
+
+        </div>
+        <div class="containermain sec6">
+            <div class="box1">
+                <div class="bx-img1">
+                    <img src="assets/home/Rectangle 3.png" alt="">
+                </div>
+
+                <h1>Farming Precision</h1>
+                <p class="bx-p1">Optimize your fields, reduce waste, and boost yields with smart, precise farming
+                    solutions.</p>
+                <a href="">
+                    Read more
+                    <img src="assets/icons/greenarrow.png" alt="">
+                </a>
+
+            </div>
+            <div class="box1">
+                <div class="bx-img2">
+                    <img src="assets/home/Rectangle 5.png" alt="">
+                </div>
+
+                <h1>Crop Surveillance</h1>
+                <p class="bx-p2">Monitor crop health in real-time with smart tools that detect issues early and protect
+                    your yield.</p>
+                <a href="">
+                    Read more
+                    <img src="assets/icons/greenarrow.png" alt="">
+                </a>
+
+            </div>
+            <div class="box1">
+                <div class="bx-img3">
+                    <img src="assets/home/Rectangle 4.png" alt="">
+                </div>
+
+                <h1>Automated Farming</h1>
+                <p class="bx-p3">Streamline your farm operations with smart automation for faster, easier, and more
+                    efficient growth.</p>
+                <a href="">
+                    Read more
+                    <img src="assets/icons/greenarrow.png" alt="">
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- contact form -->
+    <section class="outer-wrap">
+        <div class="containermain sec7">
+            <div class="cnt-form-wrap">
+                <h1>We’d love to help</h1>
+                <p>Streamline your farm operations with smart automation<br> for faster, easier, and more efficient
+                    growth.</p>
+                <div class="container-cnt">
+                    <form action="/action_page.php">
+
+
+
+                        <div class="ggg">
+                            <div>
+                                <label class="label1" for="fname">First Name</label>
+                                <input class="name1" type="text" id="fname" name="firstname">
+                            </div>
+                            <div>
+
+                                <label class="label1" for="lname">Last Name</label>
+                                <input class="name1" type="text" id="lname" name="lastname">
+                            </div>
+
+
+                        </div>
+
+                        <label class="label1" for="lname">Email</label>
+                        <input type="text" id="lname" name="lastname">
+
+                        <label class="label1" for="subject">Message</label>
+                        <textarea id="subject" name="subject" style="height:122px"></textarea>
+
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+
+            </div>
+            <div class="contact-image1">
+                <img src="assets/home/Rectangle 6.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- footer -->
+
+    <footer class="outer-wrap ft-wrap">
+        <div class="containermain footer-wrap2">
+            <div class="ft1">
+                <a href=""><img src="assets/logos/footerlogo.png" alt=""></a>
+
+                <p>Monitor crop health in real-time with smart tools that detect issues early and protect your yield.
+                </p>
+                <div class="socials1">
+                    <a href=""><img src="assets/socials/instagram.png" alt=""></a>
+                    <a href=""><img src="assets/socials/x.png" alt=""></a>
+                    <a href=""><img src="assets/socials/linkedin.png" alt=""></a>
+                    <a href=""><img src="assets/socials/facebook.png" alt=""></a>
+                </div>
+            </div>
+            <div class="ft-links-wrap">
+                <div class="ft-links1">
+                    <h1>company</h1>
+                    <ul>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">pricing</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">product</a></li>
+                        <li><a href="">contact</a></li>
+
+                    </ul>
+                </div>
+                <div class="ft-links1">
+                    <h1>resource</h1>
+                    <ul>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">customer stories</a></li>
+                        <li><a href="">info</a></li>
+                        <li><a href="">privacy policy</a></li>
+                        <li><a href="">payments</a></li>
+
+                    </ul>
+                </div>
+                <div class="ft-links1">
+                    <h1>career</h1>
+                    <ul>
+                        <li><a href="">jobs</a></li>
+                        <li><a href="">hiring</a></li>
+                        <li><a href="">news</a></li>
+                        <li><a href="">tips & tricks</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="ft-links1">
+                    <h1>help</h1>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">help center</a></li>
+                        <li><a href="">support</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="containermain ft-bottom-text">
+            <h1>REEP TO GROW</h1>
+
+        </div>
+
+
+    </footer>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+
 </body>
+
 </html>
