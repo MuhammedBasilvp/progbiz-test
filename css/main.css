@@ -229,7 +229,12 @@ header {
     line-height: 100%;
     letter-spacing: 0%;
     color: #000000;
+    transition: 0.4s;
 
+}
+
+.login:hover {
+    color: #3F7D58;
 }
 
 .signup {
@@ -248,7 +253,6 @@ header {
     padding: 10px;
     border: 1px solid #000000;
     transition: 0.4s;
-
 
 }
 
@@ -317,7 +321,7 @@ header {
 .socials1 img {
     width: 23px;
     height: 23px;
-    
+
 }
 
 
@@ -389,6 +393,12 @@ header {
     overflow: hidden;
 
 }
+
+/* Fadeup animation on scroll*/
+
+
+
+
 
 @media(min-width:996px) {
     .openbtn {
@@ -512,7 +522,7 @@ header {
     }
 
     .sidepanel a {
-        padding: 8px 8px 8px 32px;
+        padding: 12px 8px 12px 8px;
         text-decoration: none;
         font-size: 25px;
         color: #FFFFFF;
@@ -521,7 +531,7 @@ header {
         font-family: Sansation;
         font-weight: 400;
         font-style: Regular;
-        font-size: 16px;
+        font-size: 25px;
     }
 
     .sidepanel a:hover {
@@ -577,6 +587,10 @@ header {
 }
 
 @media (max-width:700px) {
+    header {
+        height: 80px;
+    }
+
     .header {
         width: 94%;
     }

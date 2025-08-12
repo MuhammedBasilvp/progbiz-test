@@ -573,7 +573,7 @@ input[type=submit]:hover {
     align-items: center;
     justify-content: center;
     height: 638px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     font-size: 1.5rem;
 }
 
@@ -622,7 +622,6 @@ input[type=submit]:hover {
     position: absolute;
     top: 85%;
     left: 5%;
-    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
@@ -673,23 +672,34 @@ input[type=submit]:hover {
     flex-direction: column;
 }
 
-.bx-wrap>div {
+.bx-img01 {
     width: 380px;
-    /* height: 480px; */
+    overflow: hidden;
     border-radius: 20px;
 }
 
-.bx-wrap>div>img {
+.bx-img01 img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
     object-fit: cover;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+
+.bx-img01 img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .bx-title {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    height: 50px;
 }
 
 .bx-title h1 {
@@ -870,7 +880,7 @@ input[type=submit]:hover {
 
     .contact-image1 {
         width: 100%;
-        height: 450px;
+        height: 380px;
 
     }
 
@@ -969,14 +979,23 @@ input[type=submit]:hover {
     .card {
         flex: 0 0 94%;
         max-width: 100%;
+        height: 490px;
     }
 
     .slider-container {
         width: 90%;
+        height: 600px;
     }
 
-    .bx-wrap>div {
+    .bx-img01 {
         width: 315px;
+    }
 
+    .buttons {
+        top: 87%;
+    }
+
+    .main-banner {
+        margin-top: 50px;
     }
 }
